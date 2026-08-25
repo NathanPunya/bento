@@ -1,0 +1,64 @@
+# Secrets
+.env
+.env.*
+!.env.example
+
+# OS
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+Desktop.ini
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# Virtualenvs (including the local macOS env)
+.venv/
+venv/
+env/
+bento-ml-macos/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Training runs, checkpoints, and weights
+output/
+outputs/
+runs/
+wandb/
+lightning_logs/
+checkpoint-*/
+*.pt
+*.pth
+*.bin
+*.ckpt
+*.safetensors
+*.onnx
+*.gguf
+
+# Caches
+.cache/
+huggingface/
+*.arrow
+
+# Editors / tooling
+.idea/
+.vscode/
+*.swp
+*.swo
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+
+# Logs
+*.log
+
+# Exceeds GitHub's 100MB file limit (keep a local copy)
+data/auxiliary_train/race.csv
